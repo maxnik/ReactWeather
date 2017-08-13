@@ -26693,7 +26693,7 @@ var _axios2 = _interopRequireDefault(_axios);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/find?units=metric&appid=1716b6cc1dad98471a12d54cd4b40841';
+var OPEN_WEATHER_MAP_URL = 'https://api.openweathermap.org/data/2.5/find?units=metric&appid=1716b6cc1dad98471a12d54cd4b40841';
 
 module.exports = {
   getTemp: function getTemp(location) {
@@ -27643,9 +27643,18 @@ var React = __webpack_require__(6);
 
 var Examples = function Examples(props) {
   return React.createElement(
-    'h3',
+    'div',
     null,
-    'Examples component'
+    React.createElement(
+      'h3',
+      null,
+      'Examples component'
+    ),
+    React.createElement(
+      'p',
+      null,
+      'Welcome to the examples page.'
+    )
   );
 };
 

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "React weather app",
   "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": "Max Nikolenko",
   "license": "MIT",
   "dependencies": {

@@ -4,7 +4,8 @@
   "description": "React weather app",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "webpack"
   },
   "author": "Max Nikolenko",
   "license": "MIT",

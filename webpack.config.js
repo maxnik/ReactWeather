@@ -1,8 +1,11 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
+
 module.exports = {
   entry: './app/app.jsx',
   output: {
-    path: __dirname,
-    filename: './public/bundle.js'
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js'
   },
   resolve: {
     modules: [__dirname, 'node_modules'],
@@ -27,7 +30,36 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.s[ac]ss$/,
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: function () {
+                  return [
+                    require('precss'),
+                    require('autoprefixer')
+                  ];
+                }
+              }
+            },
+            {
+              loader: 'sass-loader'
+            }
+          ],
+          //['css-loader', 'sass-loader'],
+          fallback: 'style-loader'
+        })
       }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin('style.css')
+  ]
 };

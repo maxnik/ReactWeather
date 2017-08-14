@@ -1,19 +1,38 @@
 const React = require('react');
 import {NavLink} from 'react-router-dom';
 
-const Nav = React.createClass({
-  render: function () {
+class Nav extends React.Component {
+  onSearch(e) {
+    e.preventDefault();
+    alert('Not yet wired up!');
+  }
+  render() {
     return (
-      <div>
-        <h1>Navigation</h1>
-        <ul>
-          <li><NavLink exact to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</NavLink></li>
-          <li><NavLink to="/about" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>About</NavLink></li>
-          <li><NavLink to="/examples" activeClassName="active" activeStyle={{ fontWeight: 'bold' }}>Examples</NavLink></li>
-        </ul>
-      </div>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span className="h1 navbar-brand mb-0">React Weather</span>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
+              <NavLink exact to="/" className="nav-link">Get Weather</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink exact to="/about" className="nav-link">About</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink exact to="/examples" className="nav-link">Examples</NavLink>
+            </li>
+          </ul>
+          <form className="form-inline my-2 my-lg-0" onSubmit={this.onSearch}>
+            <input className="form-control mr-sm-2" type="search" placeholder="Search weather" aria-label="Search"/>
+              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Get Weather</button>
+          </form>
+        </div>
+      </nav>
     );
   }
-});
+}
 
 module.exports = Nav;

@@ -10,12 +10,17 @@ const Main = React.createClass({
     return (
       <div>
         <Route path="/" component={Nav}/>
-        <h2>Main component</h2>
-        <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/examples" component={Examples} />
-          <Route path="/" component={Weather} />
-        </Switch>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-sm-12 col-md-6 col-lg-5">
+              <Switch>
+                <Route path="/about" component={About} />
+                <Route path="/examples" component={Examples} />
+                <Route path="/" component={Weather} />
+              </Switch>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

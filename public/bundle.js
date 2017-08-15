@@ -26545,16 +26545,23 @@ var Main = React.createClass({
       null,
       React.createElement(_reactRouterDom.Route, { path: '/', component: Nav }),
       React.createElement(
-        'h2',
-        null,
-        'Main component'
-      ),
-      React.createElement(
-        _reactRouterDom.Switch,
-        null,
-        React.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
-        React.createElement(_reactRouterDom.Route, { path: '/examples', component: _Examples2.default }),
-        React.createElement(_reactRouterDom.Route, { path: '/', component: _Weather2.default })
+        'div',
+        { className: 'container' },
+        React.createElement(
+          'div',
+          { className: 'row justify-content-center' },
+          React.createElement(
+            'div',
+            { className: 'col-sm-12 col-md-6 col-lg-5' },
+            React.createElement(
+              _reactRouterDom.Switch,
+              null,
+              React.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
+              React.createElement(_reactRouterDom.Route, { path: '/examples', component: _Examples2.default }),
+              React.createElement(_reactRouterDom.Route, { path: '/', component: _Weather2.default })
+            )
+          )
+        )
       )
     );
   }
@@ -27641,21 +27648,46 @@ module.exports = About;
 "use strict";
 
 
+var _reactRouterDom = __webpack_require__(57);
+
 var React = __webpack_require__(6);
+
 
 var Examples = function Examples(props) {
   return React.createElement(
     'div',
     null,
     React.createElement(
-      'h3',
-      null,
-      'Examples component'
+      'h1',
+      { className: 'text-center' },
+      'Examples'
     ),
     React.createElement(
       'p',
       null,
-      'Welcome to the examples page.'
+      'Here are a few example locations to try out:'
+    ),
+    React.createElement(
+      'ol',
+      null,
+      React.createElement(
+        'li',
+        null,
+        React.createElement(
+          _reactRouterDom.Link,
+          { to: '/?location=Philadelphia' },
+          'Philadelphia, PA'
+        )
+      ),
+      React.createElement(
+        'li',
+        null,
+        React.createElement(
+          _reactRouterDom.Link,
+          { to: '/?location=Rio' },
+          'Rio, Brazil'
+        )
+      )
     )
   );
 };

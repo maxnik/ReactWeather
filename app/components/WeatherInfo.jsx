@@ -4,7 +4,7 @@ class WeatherInfo extends React.Component {
   render() {
     const {location, temp} = this.props;
     return (
-      <p>It's {temp} in {location}.</p>
+      <h3 className="text-center">It's {temp} in {location}.</h3>
     );
   }
 }

@@ -11761,7 +11761,7 @@ var Weather = function (_React$Component) {
         if (isLoading) {
           return _react2.default.createElement(
             'h3',
-            null,
+            { className: 'text-center' },
             'Fetching weather...'
           );
         } else if (temp && location) {
@@ -11773,8 +11773,8 @@ var Weather = function (_React$Component) {
         'div',
         null,
         _react2.default.createElement(
-          'h3',
-          null,
+          'h1',
+          { className: 'text-center' },
           'Get Weather'
         ),
         _react2.default.createElement(_WeatherForm2.default, { onSearch: this.handleSearch }),
@@ -26620,10 +26620,14 @@ var WeatherForm = function (_React$Component) {
       return _react2.default.createElement(
         'form',
         { onSubmit: this.onFormSubmit },
-        _react2.default.createElement('input', { type: 'text', ref: 'location', placeholder: 'Enter city name' }),
+        _react2.default.createElement(
+          'div',
+          { className: 'form-group' },
+          _react2.default.createElement('input', { className: 'form-control', type: 'text', ref: 'location', placeholder: 'Enter city name' })
+        ),
         _react2.default.createElement(
           'button',
-          null,
+          { className: 'btn btn-outline-primary btn-block' },
           'Get Weather'
         )
       );
@@ -26666,20 +26670,20 @@ var WeatherInfo = function (_React$Component) {
   }
 
   _createClass(WeatherInfo, [{
-    key: 'render',
+    key: "render",
     value: function render() {
       var _props = this.props,
           location = _props.location,
           temp = _props.temp;
 
       return _react2.default.createElement(
-        'p',
-        null,
-        'It\'s ',
+        "h3",
+        { className: "text-center" },
+        "It's ",
         temp,
-        ' in ',
+        " in ",
         location,
-        '.'
+        "."
       );
     }
   }]);

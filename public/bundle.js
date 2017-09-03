@@ -532,6 +532,16 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(21);
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -727,16 +737,6 @@ var ReactDOMComponentTree = {
 
 module.exports = ReactDOMComponentTree;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(21);
-
 
 /***/ }),
 /* 7 */
@@ -5900,7 +5900,7 @@ module.exports = getEventModifierState;
 
 var DOMLazyTree = __webpack_require__(24);
 var Danger = __webpack_require__(139);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(10);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(49);
@@ -7409,7 +7409,7 @@ exports.default = createTransitionManager;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
@@ -9154,7 +9154,7 @@ module.exports = ReactFeatureFlags;
 
 
 
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 
 function isCheckable(elem) {
   var type = elem.type;
@@ -9617,7 +9617,7 @@ module.exports = CSSProperty;
 
 
 var DOMProperty = __webpack_require__(17);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(10);
 
 var quoteAttributeValueForBrowser = __webpack_require__(153);
@@ -9882,7 +9882,7 @@ module.exports = ReactPropTypesSecret;
 var _assign = __webpack_require__(4);
 
 var LinkedValueUtils = __webpack_require__(50);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(15);
 
 var warning = __webpack_require__(2);
@@ -10819,7 +10819,7 @@ var DOMProperty = __webpack_require__(17);
 var React = __webpack_require__(21);
 var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactCurrentOwner = __webpack_require__(14);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(195);
 var ReactDOMFeatureFlags = __webpack_require__(196);
 var ReactFeatureFlags = __webpack_require__(75);
@@ -11442,7 +11442,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -11584,7 +11584,7 @@ Route.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -11691,7 +11691,7 @@ Link.contextTypes = {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(6);
+var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -11706,6 +11706,10 @@ var _WeatherInfo2 = _interopRequireDefault(_WeatherInfo);
 var _openWeatherMap = __webpack_require__(235);
 
 var _openWeatherMap2 = _interopRequireDefault(_openWeatherMap);
+
+var _Modal = __webpack_require__(255);
+
+var _Modal2 = _interopRequireDefault(_Modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11724,7 +11728,8 @@ var Weather = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Weather.__proto__ || Object.getPrototypeOf(Weather)).call(this, props));
 
     _this.state = {
-      isLoading: false
+      isLoading: false,
+      errorMessage: null
     };
     _this.handleSearch = _this.handleSearch.bind(_this);
     return _this;
@@ -11735,7 +11740,10 @@ var Weather = function (_React$Component) {
     value: function handleSearch(location) {
       var _this2 = this;
 
-      this.setState({ isLoading: true });
+      this.setState({
+        isLoading: true,
+        errorMessage: null
+      });
 
       _openWeatherMap2.default.getTemp(location).then(function (temp) {
         _this2.setState({
@@ -11744,8 +11752,10 @@ var Weather = function (_React$Component) {
           isLoading: false
         });
       }, function (errorMessage) {
-        alert(errorMessage);
-        _this2.setState({ isLoading: false });
+        _this2.setState({
+          isLoading: false,
+          errorMessage: errorMessage.message
+        });
       });
     }
   }, {
@@ -11754,7 +11764,8 @@ var Weather = function (_React$Component) {
       var _state = this.state,
           isLoading = _state.isLoading,
           location = _state.location,
-          temp = _state.temp;
+          temp = _state.temp,
+          errorMessage = _state.errorMessage;
 
 
       function renderMessage() {
@@ -11778,7 +11789,8 @@ var Weather = function (_React$Component) {
           'Get Weather'
         ),
         _react2.default.createElement(_WeatherForm2.default, { onSearch: this.handleSearch }),
-        renderMessage()
+        renderMessage(),
+        _react2.default.createElement(_Modal2.default, { errorMessage: errorMessage })
       );
     }
   }]);
@@ -12064,7 +12076,7 @@ module.exports = Cancel;
 "use strict";
 
 
-var React = __webpack_require__(6);
+var React = __webpack_require__(5);
 var ReactDOM = __webpack_require__(119);
 
 var _require = __webpack_require__(38),
@@ -12073,7 +12085,7 @@ var _require = __webpack_require__(38),
 var Main = __webpack_require__(232);
 var Weather = __webpack_require__(98);
 
-__webpack_require__(258);
+__webpack_require__(261);
 
 ReactDOM.render(React.createElement(
   BrowserRouter,
@@ -14055,7 +14067,7 @@ module.exports = __webpack_require__(120);
 
 
 
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDefaultInjection = __webpack_require__(121);
 var ReactMount = __webpack_require__(93);
 var ReactReconciler = __webpack_require__(23);
@@ -14178,7 +14190,7 @@ var EnterLeaveEventPlugin = __webpack_require__(136);
 var HTMLDOMPropertyConfig = __webpack_require__(137);
 var ReactComponentBrowserEnvironment = __webpack_require__(138);
 var ReactDOMComponent = __webpack_require__(144);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMEmptyComponent = __webpack_require__(170);
 var ReactDOMTreeTraversal = __webpack_require__(171);
 var ReactDOMTextComponent = __webpack_require__(172);
@@ -14915,7 +14927,7 @@ module.exports = SyntheticInputEvent;
 var EventPluginHub = __webpack_require__(26);
 var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(15);
 var SyntheticEvent = __webpack_require__(16);
 
@@ -15970,7 +15982,7 @@ module.exports = DefaultEventPluginOrder;
 
 
 var EventPropagators = __webpack_require__(25);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var SyntheticMouseEvent = __webpack_require__(34);
 
 var eventTypes = {
@@ -16723,7 +16735,7 @@ module.exports = getMarkupWrap;
 
 
 var DOMChildrenOperations = __webpack_require__(47);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 
 /**
  * Operations used to process updates to DOM nodes.
@@ -16775,7 +16787,7 @@ var EventPluginHub = __webpack_require__(26);
 var EventPluginRegistry = __webpack_require__(32);
 var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactDOMComponentFlags = __webpack_require__(70);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMInput = __webpack_require__(156);
 var ReactDOMOption = __webpack_require__(157);
 var ReactDOMSelect = __webpack_require__(84);
@@ -17776,7 +17788,7 @@ module.exports = ReactDOMComponent;
 
 
 
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 
 var focusNode = __webpack_require__(80);
 
@@ -18489,7 +18501,7 @@ var _prodInvariant = __webpack_require__(3),
 
 var DOMPropertyOperations = __webpack_require__(82);
 var LinkedValueUtils = __webpack_require__(50);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(15);
 
 var invariant = __webpack_require__(1);
@@ -18780,7 +18792,7 @@ module.exports = ReactDOMInput;
 var _assign = __webpack_require__(4);
 
 var React = __webpack_require__(21);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMSelect = __webpack_require__(84);
 
 var warning = __webpack_require__(2);
@@ -18909,7 +18921,7 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var LinkedValueUtils = __webpack_require__(50);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(15);
 
 var invariant = __webpack_require__(1);
@@ -21135,7 +21147,7 @@ module.exports = ReactServerUpdateQueue;
 var _assign = __webpack_require__(4);
 
 var DOMLazyTree = __webpack_require__(24);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 
 var ReactDOMEmptyComponent = function (instantiate) {
   // ReactCompositeComponent uses this:
@@ -21344,7 +21356,7 @@ var _prodInvariant = __webpack_require__(3),
 
 var DOMChildrenOperations = __webpack_require__(47);
 var DOMLazyTree = __webpack_require__(24);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 
 var escapeTextContentForBrowser = __webpack_require__(36);
 var invariant = __webpack_require__(1);
@@ -21585,7 +21597,7 @@ var _assign = __webpack_require__(4);
 var EventListener = __webpack_require__(90);
 var ExecutionEnvironment = __webpack_require__(7);
 var PooledClass = __webpack_require__(19);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(15);
 
 var getEventTarget = __webpack_require__(44);
@@ -22717,7 +22729,7 @@ module.exports = SVGDOMPropertyConfig;
 
 var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInputSelection = __webpack_require__(91);
 var SyntheticEvent = __webpack_require__(16);
 
@@ -22913,7 +22925,7 @@ var _prodInvariant = __webpack_require__(3);
 
 var EventListener = __webpack_require__(90);
 var EventPropagators = __webpack_require__(25);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var SyntheticAnimationEvent = __webpack_require__(186);
 var SyntheticClipboardEvent = __webpack_require__(187);
 var SyntheticEvent = __webpack_require__(16);
@@ -23854,7 +23866,7 @@ module.exports = '15.6.1';
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(14);
-var ReactDOMComponentTree = __webpack_require__(5);
+var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstanceMap = __webpack_require__(28);
 
 var getHostComponentFromComposite = __webpack_require__(94);
@@ -24192,7 +24204,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -24753,7 +24765,7 @@ exports.default = valueEqual;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -24989,7 +25001,7 @@ exports.default = createMemoryHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25075,7 +25087,7 @@ Prompt.contextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25604,7 +25616,7 @@ module.exports = Array.isArray || function (arr) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_invariant__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -25778,7 +25790,7 @@ StaticRouter.childContextTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25864,7 +25876,7 @@ Switch.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25966,7 +25978,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -26364,7 +26376,7 @@ exports.default = createHashHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -26521,19 +26533,19 @@ var _Weather = __webpack_require__(98);
 
 var _Weather2 = _interopRequireDefault(_Weather);
 
-var _About = __webpack_require__(255);
+var _About = __webpack_require__(258);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Examples = __webpack_require__(256);
+var _Examples = __webpack_require__(259);
 
 var _Examples2 = _interopRequireDefault(_Examples);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var React = __webpack_require__(6);
+var React = __webpack_require__(5);
 
-var Nav = __webpack_require__(257);
+var Nav = __webpack_require__(260);
 
 
 var Main = React.createClass({
@@ -26578,7 +26590,7 @@ module.exports = Main;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(6);
+var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26648,7 +26660,7 @@ module.exports = WeatherForm;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(6);
+var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -27608,7 +27620,1814 @@ module.exports = function spread(callback) {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(6);
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _bootstrapNativeV = __webpack_require__(256);
+
+var _bootstrapNativeV2 = _interopRequireDefault(_bootstrapNativeV);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Modal = function (_React$Component) {
+  _inherits(Modal, _React$Component);
+
+  function Modal(props) {
+    _classCallCheck(this, Modal);
+
+    var _this = _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).call(this, props));
+
+    _this.handleClose = _this.handleClose.bind(_this);
+    return _this;
+  }
+
+  _createClass(Modal, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var errorModal = document.getElementById('error-modal');
+      this.modal = new _bootstrapNativeV2.default.Modal(errorModal);
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      if (this.props.errorMessage) {
+        this.modal.show();
+      }
+    }
+  }, {
+    key: 'handleClose',
+    value: function handleClose() {
+      this.modal.hide();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { id: 'error-modal', className: 'modal fade', tabIndex: '-1', role: 'dialog', 'aria-labelledby': 'errorModal', 'aria-hidden': 'true' },
+        _react2.default.createElement(
+          'div',
+          { className: 'modal-dialog' },
+          _react2.default.createElement(
+            'div',
+            { className: 'modal-content' },
+            _react2.default.createElement(
+              'div',
+              { className: 'modal-header' },
+              _react2.default.createElement(
+                'button',
+                { type: 'button', className: 'close', 'aria-label': 'Close', onClick: this.handleClose },
+                _react2.default.createElement(
+                  'span',
+                  { 'aria-hidden': 'true' },
+                  '\xD7'
+                )
+              ),
+              _react2.default.createElement(
+                'h4',
+                { className: 'modal-title', id: 'errorModal' },
+                'Error'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'modal-body' },
+              this.props.errorMessage
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'modal-footer' },
+              _react2.default.createElement(
+                'button',
+                { type: 'button', className: 'btn btn-default', onClick: this.handleClose },
+                'Close'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Modal;
+}(_react2.default.Component);
+
+module.exports = Modal;
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Native Javascript for Bootstrap 4 v2.0.13 | © dnp_theme | MIT-License
+(function (root, factory) {
+  if (true) {
+    // AMD support:
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if (typeof module === 'object' && module.exports) {
+    // CommonJS-like:
+    module.exports = factory();
+  } else {
+    // Browser globals (root is window)
+    var bsn = factory();
+    root.Alert = bsn.Alert;
+    root.Button = bsn.Button;
+    root.Carousel = bsn.Carousel;
+    root.Collapse = bsn.Collapse;
+    root.Dropdown = bsn.Dropdown;
+    root.Modal = bsn.Modal;
+    root.Popover = bsn.Popover;
+    root.ScrollSpy = bsn.ScrollSpy;
+    root.Tab = bsn.Tab;
+    root.Tooltip = bsn.Tooltip;
+  }
+}(this, function () {
+  
+  /* Native Javascript for Bootstrap 4 | Internal Utility Functions
+  ----------------------------------------------------------------*/
+  
+  // globals
+  var globalObject = typeof global !== 'undefined' ? global : this||window,
+    doc = document.documentElement, body = document.body,
+  
+    // function toggle attributes
+    dataToggle    = 'data-toggle',
+    dataDismiss   = 'data-dismiss',
+    dataSpy       = 'data-spy',
+    dataRide      = 'data-ride',
+    
+    // components
+    stringAlert     = 'Alert',
+    stringButton    = 'Button',
+    stringCarousel  = 'Carousel',
+    stringCollapse  = 'Collapse',
+    stringDropdown  = 'Dropdown',
+    stringModal     = 'Modal',
+    stringPopover   = 'Popover',
+    stringScrollSpy = 'ScrollSpy',
+    stringTab       = 'Tab',
+    stringTooltip   = 'Tooltip',
+  
+    // options DATA API
+    databackdrop      = 'data-backdrop',
+    dataKeyboard      = 'data-keyboard',
+    dataTarget        = 'data-target',
+    dataInterval      = 'data-interval',
+    dataHeight        = 'data-height',
+    dataPause         = 'data-pause',
+    dataOriginalTitle = 'data-original-title',
+    dataOriginalText  = 'data-original-text',
+    dataDismissible   = 'data-dismissible',
+    dataTrigger       = 'data-trigger',
+    dataAnimation     = 'data-animation',
+    dataContainer     = 'data-container',
+    dataPlacement     = 'data-placement',
+    dataDelay         = 'data-delay',
+    dataOffsetTop     = 'data-offset-top',
+    dataOffsetBottom  = 'data-offset-bottom',
+  
+    // option keys
+    backdrop = 'backdrop', keyboard = 'keyboard', delay = 'delay',
+    content = 'content', target = 'target', 
+    interval = 'interval', pause = 'pause', animation = 'animation',
+    placement = 'placement', container = 'container', 
+  
+    // box model
+    offsetTop    = 'offsetTop',      offsetBottom   = 'offsetBottom',
+    offsetLeft   = 'offsetLeft',
+    scrollTop    = 'scrollTop',      scrollLeft     = 'scrollLeft',
+    clientWidth  = 'clientWidth',    clientHeight   = 'clientHeight',
+    offsetWidth  = 'offsetWidth',    offsetHeight   = 'offsetHeight',
+    innerWidth   = 'innerWidth',     innerHeight    = 'innerHeight',
+    scrollHeight = 'scrollHeight',   height         = 'height',
+  
+    // aria
+    ariaExpanded = 'aria-expanded',
+    ariaHidden   = 'aria-hidden',
+  
+    // event names
+    clickEvent    = 'click',
+    hoverEvent    = 'hover',
+    keydownEvent  = 'keydown',
+    resizeEvent   = 'resize',
+    scrollEvent   = 'scroll',
+    // originalEvents
+    showEvent     = 'show',
+    shownEvent    = 'shown',
+    hideEvent     = 'hide',
+    hiddenEvent   = 'hidden',
+    closeEvent    = 'close',
+    closedEvent   = 'closed',
+    slidEvent     = 'slid',
+    slideEvent    = 'slide',
+    changeEvent   = 'change',
+  
+    // other
+    getAttribute            = 'getAttribute',
+    setAttribute            = 'setAttribute',
+    hasAttribute            = 'hasAttribute',
+    getElementsByTagName    = 'getElementsByTagName',
+    getBoundingClientRect   = 'getBoundingClientRect',
+    getElementsByCLASSNAME  = 'getElementsByClassName',
+  
+    indexOf      = 'indexOf',
+    parentNode   = 'parentNode',
+    length       = 'length',
+    toLowerCase  = 'toLowerCase',
+    Transition   = 'Transition',
+    Webkit       = 'Webkit',
+    style        = 'style',
+    
+    active     = 'active',
+    showClass  = 'show',
+    collapsing = 'collapsing',
+    disabled   = 'disabled',
+    loading    = 'loading',
+    left       = 'left',
+    right      = 'right',
+    top        = 'top',
+    bottom     = 'bottom',
+  
+    // tooltip / popover
+    fixedTop = 'fixed-top',
+    fixedBottom = 'fixed-bottom',
+    mouseHover = ('onmouseleave' in document) ? [ 'mouseenter', 'mouseleave'] : [ 'mouseover', 'mouseout' ],
+    tipPositions = /\b(top|bottom|left|top)+/,
+  
+    // transitionEnd since 2.0.4
+    supportTransitions = Webkit+Transition in doc[style] || Transition[toLowerCase]() in doc[style],
+    transitionEndEvent = Webkit+Transition in doc[style] ? Webkit[toLowerCase]()+Transition+'End' : Transition[toLowerCase]()+'end',
+  
+    // set new focus element since 2.0.3
+    setFocus = function(element){
+      element.focus ? element.focus() : element.setActive();
+    },
+  
+    // class manipulation, since 2.0.0 requires polyfill.js
+    addClass = function(element,classNAME) {
+      element.classList.add(classNAME);
+    },
+    removeClass = function(element,classNAME) {
+      element.classList.remove(classNAME);
+    },
+    hasClass = function(element,classNAME){ // since 2.0.0
+      return element.classList.contains(classNAME);
+    },
+  
+    // selection methods
+    getElementsByClassName = function(element,classNAME) { // returns Array
+      return [].slice.call(element[getElementsByCLASSNAME]( classNAME ));
+    },
+    queryElement = function (selector, parent) {
+      var lookUp = parent ? parent : document;
+      return typeof selector === 'object' ? selector : lookUp.querySelector(selector);
+    },
+    getClosest = function (element, selector) { //element is the element and selector is for the closest parent element to find
+    // source http://gomakethings.com/climbing-up-and-down-the-dom-tree-with-vanilla-javascript/
+      var firstChar = selector.charAt(0);
+      for ( ; element && element !== document; element = element[parentNode] ) {// Get closest match
+        if ( firstChar === '.' ) {// If selector is a class
+          if ( queryElement(selector,element[parentNode]) !== null && hasClass(element,selector.replace('.','')) ) { return element; }
+        } else if ( firstChar === '#' ) { // If selector is an ID
+          if ( element.id === selector.substr(1) ) { return element; }
+        }
+      }
+      return false;
+    },
+  
+    // event attach jQuery style / trigger  since 1.2.0
+    on = function (element, event, handler) {
+      element.addEventListener(event, handler, false);
+    },
+    off = function(element, event, handler) {
+      element.removeEventListener(event, handler, false);
+    },
+    one = function (element, event, handler) { // one since 2.0.4
+      on(element, event, function handlerWrapper(e){
+        handler(e);
+        off(element, event, handlerWrapper);
+      });
+    },
+    emulateTransitionEnd = function(element,handler){ // emulateTransitionEnd since 2.0.4
+      if (supportTransitions) { one(element, transitionEndEvent, function(e){ handler(e); }); }
+      else { handler(); }
+    },
+    bootstrapCustomEvent = function (eventName, componentName, related) {
+      var OriginalCustomEvent = new CustomEvent( eventName + '.bs.' + componentName);
+      OriginalCustomEvent.relatedTarget = related;
+      this.dispatchEvent(OriginalCustomEvent);
+    },
+  
+    // reference a live collection of the DOM
+    AllDOMElements = document[getElementsByTagName]('*'),
+  
+    // Init DATA API
+    initializeDataAPI = function( component, constructor, dataAttribute, collection ){
+      var lookUp = collection && collection[length] ? collection : AllDOMElements;
+      for (var i=0; i < lookUp[length]; i++) {
+        var attrValue = lookUp[i][getAttribute](dataAttribute), expectedAttrValue = component.replace(/spy/i,'')[toLowerCase]();
+        if ( attrValue && component === stringButton && ( attrValue[indexOf](expectedAttrValue) > -1 ) // data-toggle="buttons"
+            || attrValue === expectedAttrValue ) { // all other components
+          new constructor(lookUp[i]);
+        }
+      }
+    },  
+  
+    // tab / collapse stuff
+    targetsReg = /^\#(.)+$/,
+    getOuterHeight = function (child) {
+      var childStyle = child && globalObject.getComputedStyle(child), 
+        btp = /px/.test(childStyle.borderTopWidth) ? Math.round(childStyle.borderTopWidth.replace('px','')) : 0,
+        btb = /px/.test(childStyle.borderBottomWidth) ? Math.round(childStyle.borderBottomWidth.replace('px','')) : 0,
+        mtp = /px/.test(childStyle.marginTop) ? Math.round(childStyle.marginTop.replace('px','')) : 0,
+        mbp = /px/.test(childStyle.marginBottom) ? Math.round(childStyle.marginBottom.replace('px','')) : 0;
+      return child[clientHeight] + parseInt( btp ) + parseInt( btb ) + parseInt( mtp ) + parseInt( mbp );
+    },
+    getMaxHeight = function(parent) { // get collapse trueHeight and border
+      var parentHeight = 0;
+      for (var k = 0, ll = parent.children[length]; k < ll; k++) {
+        parentHeight += getOuterHeight(parent.children[k]);
+      }
+      return parentHeight;
+    },
+  
+    // tooltip / popover stuff
+    isElementInViewport = function(element) { // check if this.tooltip is in viewport
+      var rect = element[getBoundingClientRect]();
+      return ( rect[top] >= 0 && rect[left] >= 0 &&
+        rect[bottom] <= (globalObject[innerHeight] || doc[clientHeight]) &&
+        rect[right] <= (globalObject[innerWidth] || doc[clientWidth]) )
+    },
+    getScroll = function() { // also Affix and ScrollSpy uses it
+      return {
+        y : globalObject.pageYOffset || doc[scrollTop],
+        x : globalObject.pageXOffset || doc[scrollLeft]
+      }
+    },
+    styleTip = function(link,element,position,parent) { // both popovers and tooltips
+      var rect = link[getBoundingClientRect](),
+          arrow = queryElement('.arrow',element),
+          arrowWidth = arrow[offsetWidth], isPopover = hasClass(element,'popover'),
+          scroll = parent === body ? getScroll() : { x: parent[offsetLeft] + parent[scrollLeft], y: parent[offsetTop] + parent[scrollTop] },
+          linkDimensions = { w: rect[right] - rect[left], h: rect[bottom] - rect[top] },
+          elementDimensions = { w : element[offsetWidth], h: element[offsetHeight] };
+  
+      // apply styling to tooltip or popover
+      if ( position === top ) { // TOP
+        element[style][top] = rect[top] + scroll.y - elementDimensions.h - ( isPopover ? arrowWidth : 0 ) + 'px'; // isPopover is trying to fix bug with V4beta CSS
+        element[style][left] = rect[left] + scroll.x - elementDimensions.w/2 + linkDimensions.w/2 + 'px'
+        arrow[style][left] = elementDimensions.w/2 - arrowWidth/2 + 'px';
+  
+      } else if ( position === bottom ) { // BOTTOM
+        element[style][top] = rect[top] + scroll.y + linkDimensions.h + 'px';
+        element[style][left] = rect[left] + scroll.x - elementDimensions.w/2 + linkDimensions.w/2 + 'px';
+        arrow[style][left] = elementDimensions.w/2 - arrowWidth/2 + 'px';
+  
+      } else if ( position === left ) { // LEFT
+        element[style][top] = rect[top] + scroll.y - elementDimensions.h/2 + linkDimensions.h/2 + 'px';
+        element[style][left] = rect[left] + scroll.x - elementDimensions.w - ( isPopover ? arrowWidth : 0 ) + 'px'; // isPopover is trying to fix bug with V4beta CSS
+        arrow[style][top] = elementDimensions.h/2 - arrowWidth/2 + 'px';
+  
+      } else if ( position === right ) { // RIGHT
+        element[style][top] = rect[top] + scroll.y - elementDimensions.h/2 + linkDimensions.h/2 + 'px';
+        element[style][left] = rect[left] + scroll.x + linkDimensions.w + 'px';
+        arrow[style][top] = elementDimensions.h/2 - arrowWidth/2 + 'px';
+      }
+      element.className[indexOf](position) === -1 && (element.className = element.className.replace(tipPositions,position));
+    },
+    updatePlacement = function(position) {
+      return position === top ? bottom : // top
+              position === bottom ? top : // bottom
+              position === left ? right : // left
+              position === right ? left : position; // right
+    };
+  
+  
+  
+  /* Native Javascript for Bootstrap 4 | Alert
+  -------------------------------------------*/
+  
+  // ALERT DEFINITION
+  // ================
+  var Alert = function( element ) {
+    
+    // initialization element
+    element = queryElement(element);
+  
+    // bind, target alert, duration and stuff
+    var self = this, component = 'alert',
+      alert = getClosest(element,'.'+component),
+      triggerHandler = function(){ hasClass(alert,'fade') ? emulateTransitionEnd(alert,transitionEndHandler) : transitionEndHandler(); },
+      // handlers
+      clickHandler = function(e){
+        var eventTarget = e[target];
+        eventTarget = eventTarget[hasAttribute](dataDismiss) ? eventTarget : eventTarget[parentNode];
+        if (eventTarget && eventTarget[hasAttribute](dataDismiss)) { // we double check the data attribute, it's important
+          alert = getClosest(eventTarget,'.'+component);
+          element = queryElement('['+dataDismiss+'="'+component+'"]',alert);
+          (element === eventTarget || element === eventTarget[parentNode]) && alert && self.close();
+        }
+      },
+      transitionEndHandler = function(){
+        bootstrapCustomEvent.call(alert, closedEvent, component);
+        off(element, clickEvent, clickHandler); // detach it's listener
+        alert[parentNode].removeChild(alert);
+      };
+    
+    // public method
+    this.close = function() {
+      if ( alert && element && hasClass(alert,showClass) ) {
+        bootstrapCustomEvent.call(alert, closeEvent, component);
+        removeClass(alert,showClass);
+        alert && triggerHandler();
+      }
+    };
+  
+    // init
+    if ( !(stringAlert in element ) ) { // prevent adding event handlers twice
+      on(element, clickEvent, clickHandler);
+    }
+    element[stringAlert] = this;
+  };
+  
+  // ALERT DATA API
+  // ==============
+  initializeDataAPI ( stringAlert, Alert, dataDismiss );
+  
+  
+  /* Native Javascript for Bootstrap 4 | Button
+  ---------------------------------------------*/
+  
+  // BUTTON DEFINITION
+  // ===================
+  var Button = function( element ) {
+  
+    // initialization element
+    element = queryElement(element);
+  
+    // constant
+    var toggled = false, // toggled makes sure to prevent triggering twice the change.bs.button events
+  
+        // strings
+        component = 'button',
+        checked = 'checked',
+        reset = 'reset',
+        LABEL = 'LABEL',
+        INPUT = 'INPUT',
+  
+      // private methods
+      toggle = function(e) {
+        var parent = e[target][parentNode],
+          label = e[target].tagName === LABEL ? e[target] : parent.tagName === LABEL ? parent : null; // the .btn label
+  
+        if ( !label ) return; //react if a label or its immediate child is clicked
+  
+        var eventTarget = this, // the button group, the target of the handler function
+          labels = getElementsByClassName(eventTarget,'btn'), // all the button group buttons
+          input = label[getElementsByTagName](INPUT)[0];
+  
+        if ( !input ) return; //return if no input found
+  
+        // manage the dom manipulation
+        if ( input.type === 'checkbox' ) { //checkboxes
+          if ( !input[checked] ) {
+            addClass(label,active);
+            input[getAttribute](checked);
+            input[setAttribute](checked,checked);
+            input[checked] = true;
+          } else {
+            removeClass(label,active);
+            input[getAttribute](checked);
+            input.removeAttribute(checked);
+            input[checked] = false;
+          }
+  
+          if (!toggled) { // prevent triggering the event twice
+            toggled = true;
+            bootstrapCustomEvent.call(input, changeEvent, component); //trigger the change for the input
+            bootstrapCustomEvent.call(element, changeEvent, component); //trigger the change for the btn-group
+          }
+        }
+  
+        if ( input.type === 'radio' && !toggled ) { // radio buttons
+          if ( !input[checked] ) { // don't trigger if already active
+            addClass(label,active);
+            input[setAttribute](checked,checked);
+            input[checked] = true;
+            bootstrapCustomEvent.call(input, changeEvent, component); //trigger the change for the input
+            bootstrapCustomEvent.call(element, changeEvent, component); //trigger the change for the btn-group
+  
+            toggled = true;
+            for (var i = 0, ll = labels[length]; i<ll; i++) {
+              var otherLabel = labels[i], otherInput = otherLabel[getElementsByTagName](INPUT)[0];
+              if ( otherLabel !== label && hasClass(otherLabel,active) )  {
+                removeClass(otherLabel,active);
+                otherInput.removeAttribute(checked);
+                otherInput[checked] = false;
+                bootstrapCustomEvent.call(otherInput, changeEvent, component); // trigger the change
+              }
+            }
+          }
+        }
+        setTimeout( function() { toggled = false; }, 50 );
+      };
+  
+    // init
+    if ( hasClass(element,'btn-group') ) {
+      if ( !( stringButton in element ) ) { // prevent adding event handlers twice
+        on( element, clickEvent, toggle );
+      }
+      element[stringButton] = this;
+    }
+  };
+  
+  // BUTTON DATA API
+  // =================
+  initializeDataAPI( stringButton, Button, dataToggle );
+  
+  
+  /* Native Javascript for Bootstrap 4 | Carousel
+  ----------------------------------------------*/
+  
+  // CAROUSEL DEFINITION
+  // ===================
+  var Carousel = function( element, options ) {
+  
+    // initialization element
+    element = queryElement( element );
+  
+    // set options
+    options = options || {};
+  
+    // DATA API
+    var intervalData = element[getAttribute](dataInterval) === 'false' ? false : parseInt(element[getAttribute](dataInterval)) || 5000, // bootstrap carousel default interval
+        pauseData = element[getAttribute](dataPause) === hoverEvent || false,
+        keyboardData = element[getAttribute](dataKeyboard) === 'true' || false,
+      
+        // strings
+        component = 'carousel',
+        paused = 'paused',
+        direction = 'direction',
+        carouselItem = 'carousel-item',
+        dataSlideTo = 'data-slide-to'; 
+  
+    this[keyboard] = options[keyboard] === true || keyboardData;
+    this[pause] = (options[pause] === hoverEvent || pauseData) ? hoverEvent : false; // false / hover
+  
+    if ( !( options[interval] || intervalData ) ) { // determine slide interval
+      this[interval] = false;
+    } else {
+      this[interval] = parseInt(options[interval]) || intervalData; // default slide interval
+    }
+  
+    // bind, event targets
+    var self = this, index = element.index = 0, timer = element.timer = 0, 
+      isSliding = false, // isSliding prevents click event handlers when animation is running
+      slides = getElementsByClassName(element,carouselItem), total = slides[length],
+      slideDirection = this[direction] = left,
+      leftArrow = getElementsByClassName(element,component+'-control-prev')[0], 
+      rightArrow = getElementsByClassName(element,component+'-control-next')[0],
+      indicator = queryElement( '.'+component+'-indicators', element ),
+      indicators = indicator && indicator[getElementsByTagName]( "LI" ) || [];
+  
+    // handlers
+    var pauseHandler = function () {
+        if ( self[interval] !==false && !hasClass(element,paused) ) {
+          addClass(element,paused);
+          !isSliding && clearInterval( timer );
+        }
+      },
+      resumeHandler = function() {
+        if ( self[interval] !== false && hasClass(element,paused) ) {
+          removeClass(element,paused);
+          !isSliding && clearInterval( timer );
+          !isSliding && self.cycle();
+        }
+      },
+      indicatorHandler = function(e) {
+        e.preventDefault();
+        if (isSliding) return;
+  
+        var eventTarget = e[target], activeIndicator = self.getActiveIndex(); // event target | the current active item
+  
+        if ( eventTarget && !hasClass(eventTarget,active) && eventTarget[getAttribute](dataSlideTo) ) {
+          index = parseInt( eventTarget[getAttribute](dataSlideTo), 10 );
+  
+          //determine direction first
+          if  ( (activeIndicator < index ) || (activeIndicator === 0 && index === total -1 ) ) {
+            slideDirection = self[direction] = left; // next
+          } else if  ( (activeIndicator > index) || (activeIndicator === total - 1 && index === 0 ) ) {
+            slideDirection = self[direction] = right; // prev
+          }
+        } else { return false; }
+  
+        self.slideTo( index ); //Do the slide
+      },
+      controlsHandler = function (e) {
+        e.preventDefault();
+        if (isSliding) return;
+  
+        var eventTarget = e.currentTarget || e.srcElement;
+  
+        if ( eventTarget === rightArrow ) {
+          index++;
+          slideDirection = self[direction] = left; //set direction first
+  
+          if( index === total - 1 ) {
+            index = total - 1;
+          } else if ( index === total ){
+            index = 0;
+          }
+        } else if ( eventTarget === leftArrow ) {
+          index--;
+          slideDirection = self[direction] = right; //set direction first
+  
+          if( index === 0 ) {
+            index = 0;
+          } else if ( index < 0 ){
+            index = total - 1
+          }
+        }
+  
+        self.slideTo( index ); //Do the slide
+      },
+      keyHandler = function (e) {
+        if (isSliding) return;
+        switch (e.which) {
+          case 39:
+            index++;
+            slideDirection = self[direction] = left;
+            if( index == total - 1 ) { index = total - 1; } else
+            if ( index == total ){ index = 0 }
+            break;
+          case 37:
+            index--;
+            slideDirection = self[direction] = right;
+            if ( index == 0 ) { index = 0; } else
+            if ( index < 0 ) { index = total - 1 }
+            break;
+          default: return;
+        }
+        self.slideTo( index ); //Do the slide
+      },
+      // private methods
+      setActivePage = function( pageIndex ) { //indicators
+        for ( var i = 0, icl = indicators[length]; i < icl; i++ ) {
+          removeClass(indicators[i],active);
+        }
+        if (indicators[pageIndex]) addClass(indicators[pageIndex], active);
+      };
+  
+  
+    // public methods
+    this.cycle = function() {
+      slideDirection = this[direction] = left; // make sure to always come back to default slideDirection
+      timer = setInterval(function() {
+        index++;
+  
+        index = index === total ? 0 : index;
+        self.slideTo( index );
+      }, this[interval]);
+    };
+    this.slideTo = function( next ) {
+      var activeItem = this.getActiveIndex(), // the current active
+        orientation = slideDirection === left ? 'next' : 'prev'; //determine type
+  
+      bootstrapCustomEvent.call(element, slideEvent, component, slides[next]); // here we go with the slide
+  
+      isSliding = true;
+      clearInterval(timer);
+      setActivePage( next );
+  
+      if ( supportTransitions && hasClass(element,'slide') ) {
+  
+        addClass(slides[next],carouselItem +'-'+ orientation);
+        slides[next][offsetWidth];
+        addClass(slides[next],carouselItem +'-'+ slideDirection);
+        addClass(slides[activeItem],carouselItem +'-'+ slideDirection);
+  
+        one(slides[activeItem], transitionEndEvent, function(e) {
+          var timeout = e[target] !== slides[activeItem] ? e.elapsedTime*1000 : 0;
+          
+          setTimeout(function(){
+            isSliding = false;
+  
+            addClass(slides[next],active);
+            removeClass(slides[activeItem],active);
+  
+            removeClass(slides[next],carouselItem +'-'+ orientation);
+            removeClass(slides[next],carouselItem +'-'+ slideDirection);
+            removeClass(slides[activeItem],carouselItem +'-'+ slideDirection);
+  
+            bootstrapCustomEvent.call(element, slidEvent, component, slides[next]);
+  
+            if ( !document.hidden && self[interval] && !hasClass(element,paused) ) {
+              self.cycle();
+            }
+          },timeout+100);
+        });
+  
+      } else {
+        addClass(slides[next],active);
+        slides[next][offsetWidth];
+        removeClass(slides[activeItem],active);
+        setTimeout(function() {
+          isSliding = false;
+          if ( self[interval] && !hasClass(element,paused) ) {
+            self.cycle();
+          }
+          bootstrapCustomEvent.call(element, slidEvent, component, slides[next]);
+        }, 100 );
+      }
+    };
+    this.getActiveIndex = function () {
+      return slides[indexOf](getElementsByClassName(element,carouselItem+' active')[0]) || 0;
+    };
+  
+    // init
+    if ( !(stringCarousel in element ) ) { // prevent adding event handlers twice
+  
+      if ( this[pause] && this[interval] ) {
+        on( element, mouseHover[0], pauseHandler );
+        on( element, mouseHover[1], resumeHandler );
+        on( element, 'touchstart', pauseHandler );
+        on( element, 'touchend', resumeHandler );
+      }
+    
+      rightArrow && on( rightArrow, clickEvent, controlsHandler );
+      leftArrow && on( leftArrow, clickEvent, controlsHandler );
+    
+      indicator && on( indicator, clickEvent, indicatorHandler, false);
+      this[keyboard] === true && on( globalObject, keydownEvent, keyHandler, false);
+    }
+    if (this.getActiveIndex()<0) {
+      slides[length] && addClass(slides[0],active);
+      indicators[length] && setActivePage(0);
+    }
+  
+    if ( this[interval] ){ this.cycle(); }
+    element[stringCarousel] = this;
+  };
+  
+  // CAROUSEL DATA API
+  // =================
+  initializeDataAPI( stringCarousel, Carousel, dataRide );
+  
+  
+  /* Native Javascript for Bootstrap 4 | Collapse
+  -----------------------------------------------*/
+  
+  // COLLAPSE DEFINITION
+  // ===================
+  var Collapse = function( element, options ) {
+  
+    // initialization element
+    element = queryElement(element);
+  
+    // set options
+    options = options || {};
+  
+  
+    // event targets and constants
+    var accordion = null, collapse = null, self = this, 
+      isAnimating = false, // when true it will prevent click handlers
+      accordionData = element[getAttribute]('data-parent'),
+  
+      // component strings
+      component = 'collapse',
+      collapsed = 'collapsed',
+  
+      // private methods
+      openAction = function(collapseElement) {
+        bootstrapCustomEvent.call(collapseElement, showEvent, component);
+        isAnimating = true;
+        addClass(collapseElement,collapsing);
+        addClass(collapseElement,showClass);
+        setTimeout(function() {
+          collapseElement[style][height] = getMaxHeight(collapseElement) + 'px';
+  
+          emulateTransitionEnd(collapseElement, function(){
+            isAnimating = false;
+            collapseElement[setAttribute](ariaExpanded,'true');
+            removeClass(collapseElement,collapsing);
+            collapseElement[style][height] = '';
+            bootstrapCustomEvent.call(collapseElement, shownEvent, component);
+          });
+        }, 20);
+      },
+      closeAction = function(collapseElement) {
+        bootstrapCustomEvent.call(collapseElement, hideEvent, component);
+        isAnimating = true;
+        collapseElement[style][height] = getMaxHeight(collapseElement) + 'px';
+        setTimeout(function() {
+          addClass(collapseElement,collapsing);
+          collapseElement[style][height] = '0px';
+  
+          emulateTransitionEnd(collapseElement, function(){
+            isAnimating = false;
+            collapseElement[setAttribute](ariaExpanded,'false');
+            removeClass(collapseElement,collapsing);
+            removeClass(collapseElement,showClass);
+            collapseElement[style][height] = '';
+            bootstrapCustomEvent.call(collapseElement, hiddenEvent, component);
+          });
+        },20);
+      },
+      getTarget = function() {
+        var href = element.href && element[getAttribute]('href'),
+          parent = element[getAttribute](dataTarget),
+          id = href || ( parent && targetsReg.test(parent) ) && parent;
+        return id && queryElement(id);
+      };
+    
+    // public methods
+    this.toggle = function(e) {
+      e.preventDefault();
+      if (isAnimating) return;
+      if (!hasClass(collapse,showClass)) { self.show(); } 
+      else { self.hide(); }
+    };
+    this.hide = function() {
+      closeAction(collapse);
+      addClass(element,collapsed);
+    };
+    this.show = function() {
+      openAction(collapse);
+      removeClass(element,collapsed);
+  
+      if ( accordion !== null ) {
+        var activeCollapses = getElementsByClassName(accordion,component+' '+showClass),
+            allToggles = accordion.querySelectorAll('['+dataToggle+'="'+component+'"]'),
+            correspondingCollapse;
+        for (var i=0, al=activeCollapses[length]; i<al; i++) {
+          if ( activeCollapses[i] !== collapse ) { closeAction(activeCollapses[i]); }
+        }
+        for (var u=0, atl=allToggles[length]; u<atl; u++) {
+          correspondingCollapse = allToggles[u][getAttribute](dataTarget) || allToggles[u].href;
+          if ( correspondingCollapse.split('#')[1] !== collapse.id ) { addClass(allToggles[u],collapsed); } 
+          else { removeClass(allToggles[u],collapsed); }
+        }
+      }
+    };
+  
+    // init
+    if ( !(stringCollapse in element ) ) { // prevent adding event handlers twice
+      on(element, clickEvent, this.toggle);
+    }
+    collapse = getTarget();
+    accordion = queryElement(options.parent) || accordionData && getClosest(element, accordionData);
+    element[stringCollapse] = this;
+  };
+  
+  // COLLAPSE DATA API
+  // =================
+  initializeDataAPI(stringCollapse, Collapse, dataToggle);
+  
+  
+  /* Native Javascript for Bootstrap 4 | Dropdown
+  ----------------------------------------------*/
+  
+  // DROPDOWN DEFINITION
+  // ===================
+  var Dropdown = function( element, option ) {
+      
+    // initialization element
+    element = queryElement(element);
+  
+    // set option
+    this.persist = option === true || element[getAttribute]('data-persist') === 'true' || false;
+  
+    // constants, event targets, strings
+    var self = this, isOpen = false,
+      parent = element[parentNode],
+      component = 'dropdown',
+      relatedTarget = null,
+      menu = queryElement('.dropdown-menu', parent),
+      children =  menu[getElementsByTagName]('*'),
+  
+      // handlers
+      keyHandler = function(e) {
+        if (isOpen && (e.which == 27 || e.keyCode == 27)) { relatedTarget = null; hide(); } // e.keyCode for IE8
+      },
+      clickHandler = function(e) {
+        var eventTarget = e[target],
+          hasData = eventTarget && (eventTarget[getAttribute](dataToggle) || eventTarget[parentNode] && getAttribute in eventTarget[parentNode] && eventTarget[parentNode][getAttribute](dataToggle));
+  
+        if ( eventTarget === element || eventTarget === parent || eventTarget[parentNode] === element ) {
+          e.preventDefault(); // comment this line to stop preventing navigation when click target is a link 
+          relatedTarget = element;
+          self.toggle();
+        } else if ( isOpen ) {
+          if ( (eventTarget === menu || children && [].slice.call(children)[indexOf](eventTarget) > -1) && ( self.persist || hasData ) ) {
+            return;
+          } else { relatedTarget = null; hide(); }
+        }
+        (/\#$/.test(eventTarget.href) || eventTarget[parentNode] && /\#$/.test(eventTarget[parentNode].href)) && e.preventDefault(); // should be here to prevent jumps
+      },
+      // private methods
+      show = function() {
+        bootstrapCustomEvent.call(parent, showEvent, component, relatedTarget);
+        addClass(menu,showClass);
+        addClass(parent,showClass);
+        menu[setAttribute](ariaExpanded,true);
+        bootstrapCustomEvent.call(parent, shownEvent, component, relatedTarget);
+        on(document, keydownEvent, keyHandler);
+        isOpen = true;
+      },
+      hide = function() {
+        bootstrapCustomEvent.call(parent, hideEvent, component, relatedTarget);
+        removeClass(menu,showClass);
+        removeClass(parent,showClass);
+        menu[setAttribute](ariaExpanded,false);
+        bootstrapCustomEvent.call(parent, hiddenEvent, component, relatedTarget);
+        off(document, keydownEvent, keyHandler);
+        isOpen = false;
+      };
+  
+    // public methods
+    this.toggle = function() {
+      if (hasClass(parent,showClass) && isOpen) { hide(); } 
+      else { show(); }
+    };
+  
+    // init
+    if ( !(stringDropdown in element) ) { // prevent adding event handlers twice
+      menu[setAttribute]('tabindex', '0'); // Fix onblur on Chrome | Safari
+      on(document, clickEvent, clickHandler);
+    }
+    element[stringDropdown] = this;
+  };
+  
+  // DROPDOWN DATA API
+  // =================
+  initializeDataAPI( stringDropdown, Dropdown, dataToggle );
+  
+  
+  /* Native Javascript for Bootstrap 4 | Modal
+  -------------------------------------------*/
+    
+  // MODAL DEFINITION
+  // ===============
+  var Modal = function(element, options) { // element can be the modal/triggering button
+  
+    // the modal (both JavaScript / DATA API init) / triggering button element (DATA API)
+    element = queryElement(element);
+  
+    // determine modal, triggering element 
+    var btnCheck = element[getAttribute](dataTarget)||element[getAttribute]('href'),
+      checkModal = queryElement( btnCheck ),
+      modal = hasClass(element,'modal') ? element : checkModal,
+  
+      // strings
+      component = 'modal',
+      staticString = 'static',
+      paddingLeft = 'paddingLeft',
+      paddingRight = 'paddingRight',
+      modalBackdropString = 'modal-backdrop';
+  
+    if ( hasClass(element,'modal') ) { element = null; } // modal is now independent of it's triggering element
+  
+    if ( !modal ) { return; } // invalidate
+  
+    // set options
+    options = options || {};
+  
+    this[keyboard] = options[keyboard] === false || modal[getAttribute](dataKeyboard) === 'false' ? false : true;
+    this[backdrop] = options[backdrop] === staticString || modal[getAttribute](databackdrop) === staticString ? staticString : true;
+    this[backdrop] = options[backdrop] === false || modal[getAttribute](databackdrop) === 'false' ? false : this[backdrop];
+    this[content]  = options[content]; // JavaScript only
+  
+    // bind, constants, event targets and other vars
+    var self = this, open = this.open = false, relatedTarget = null,
+      bodyIsOverflowing, modalIsOverflowing, scrollbarWidth, overlay,
+  
+      // also find fixed-top / fixed-bottom items
+      fixedItems = getElementsByClassName(doc,fixedTop).concat(getElementsByClassName(doc,fixedBottom)),
+  
+      // private methods
+      getWindowWidth = function() {
+        var htmlRect = doc[getBoundingClientRect]();
+        return globalObject[innerWidth] || (htmlRect[right] - Math.abs(htmlRect[left]));
+      },
+      setScrollbar = function () {
+        var bodyStyle = globalObject.getComputedStyle(body), 
+            bodyPad = parseInt((bodyStyle[paddingRight]), 10), itemPad;
+        if (bodyIsOverflowing) { 
+          body[style][paddingRight] = (bodyPad + scrollbarWidth) + 'px';
+          if (fixedItems[length]){
+            for (var i = 0; i < fixedItems[length]; i++) {
+              itemPad = globalObject.getComputedStyle(fixedItems[i])[paddingRight];
+              fixedItems[i][style][paddingRight] = ( parseInt(itemPad) + scrollbarWidth) + 'px';
+            }
+          }
+        }
+      },
+      resetScrollbar = function () {
+        body[style][paddingRight] = '';
+        if (fixedItems[length]){
+          for (var i = 0; i < fixedItems[length]; i++) {
+            fixedItems[i][style][paddingRight] = '';
+          }
+        }
+      },
+      measureScrollbar = function () { // thx walsh
+        var scrollDiv = document.createElement('div'), scrollBarWidth;
+        scrollDiv.className = component+'-scrollbar-measure'; // this is here to stay
+        body.appendChild(scrollDiv);
+        scrollBarWidth = scrollDiv[offsetWidth] - scrollDiv[clientWidth];
+        body.removeChild(scrollDiv);
+        return scrollBarWidth;
+      },
+      checkScrollbar = function () {
+        bodyIsOverflowing = body[clientWidth] < getWindowWidth();
+        modalIsOverflowing = modal[scrollHeight] > doc[clientHeight];
+        scrollbarWidth = measureScrollbar();
+      },
+      adjustDialog = function () {
+        modal[style][paddingLeft] = !bodyIsOverflowing && modalIsOverflowing ? scrollbarWidth + 'px' : '';
+        modal[style][paddingRight] = bodyIsOverflowing && !modalIsOverflowing ? scrollbarWidth + 'px' : '';
+      },
+      resetAdjustments = function () {
+        modal[style][paddingLeft] = '';
+        modal[style][paddingRight] = '';
+      },
+      createOverlay = function() {
+        var newOverlay = document.createElement('div');
+        overlay = queryElement('.'+modalBackdropString);
+  
+        if ( overlay === null ) {
+          newOverlay[setAttribute]('class',modalBackdropString+' fade');
+          overlay = newOverlay;
+          body.appendChild(overlay);
+        }
+      },
+      removeOverlay = function() {
+        overlay = queryElement('.'+modalBackdropString); 
+        if ( overlay && overlay !== null && typeof overlay === 'object' ) {
+          body.removeChild(overlay); overlay = null;
+        }
+      },
+      keydownHandlerToggle = function() {
+        if (!hasClass(modal,showClass)) {
+          on(document, keydownEvent, keyHandler);
+        } else {
+          off(document, keydownEvent, keyHandler);
+        }
+      },
+      resizeHandlerToggle = function() {
+        if (!hasClass(modal,showClass)) {
+          on(globalObject, resizeEvent, self.update);
+        } else {
+          off(globalObject, resizeEvent, self.update);
+        }
+      },
+      dismissHandlerToggle = function() {
+        if (!hasClass(modal,showClass)) {
+          on(modal, clickEvent, dismissHandler);
+        } else {
+          off(modal, clickEvent, dismissHandler);
+        }
+      },
+      // triggers
+      triggerShow = function() {
+        open = self.open = true;
+        setFocus(modal);
+        bootstrapCustomEvent.call(modal, shownEvent, component, relatedTarget);
+      },
+      triggerHide = function() {
+        resizeHandlerToggle();
+        dismissHandlerToggle();
+        keydownHandlerToggle();
+  
+        modal[style].display = '';
+  
+        open = self.open = false;
+        element && (setFocus(element));
+        bootstrapCustomEvent.call(modal, hiddenEvent, component);
+        setTimeout(function(){
+          if (!getElementsByClassName(document,component+' '+showClass)[0]) {
+            resetAdjustments();
+            resetScrollbar();
+            removeClass(body,component+'-open');
+            removeOverlay(); 
+          }
+        }, 100);
+      }, 
+      // handlers
+      clickHandler = function(e) {
+        var clickTarget = e[target]; 
+        clickTarget = clickTarget[hasAttribute](dataTarget) || clickTarget[hasAttribute]('href') ? clickTarget : clickTarget[parentNode];
+        if ( !open && clickTarget === element && !hasClass(modal,showClass) ) {
+          modal.modalTrigger = element;
+          relatedTarget = element;
+          self.show();
+          e.preventDefault();
+        }
+      },
+      keyHandler = function(e) {
+        var key = e.which || e.keyCode; // keyCode for IE8
+        if (self[keyboard] && key == 27 && open) {
+          self.hide();
+        }
+      },
+      dismissHandler = function(e) {
+        var clickTarget = e[target];
+        if ( open && (clickTarget[parentNode][getAttribute](dataDismiss) === component 
+            || clickTarget[getAttribute](dataDismiss) === component
+            || (clickTarget === modal && self[backdrop] !== staticString) ) ) {
+          self.hide(); relatedTarget = null;
+          e.preventDefault();
+        }
+      };
+  
+    // public methods
+    this.toggle = function() {
+      if (open && hasClass(modal,showClass)) {this.hide();} else {this.show();}
+    };
+    this.show = function() {
+      bootstrapCustomEvent.call(modal, showEvent, component, relatedTarget);
+  
+      // we elegantly hide any opened modal
+      var currentOpen = getElementsByClassName(document,component+' '+showClass)[0];
+      currentOpen && currentOpen !== modal && currentOpen.modalTrigger[stringModal].hide(); 
+  
+      if ( this[backdrop] ) {
+        createOverlay();
+      }
+  
+      if ( overlay && !hasClass(overlay,showClass)) {
+        setTimeout( function() { addClass(overlay, showClass); },0);
+      }
+  
+      setTimeout( function() {
+        modal[style].display = 'block';
+  
+        checkScrollbar();
+        setScrollbar();
+        adjustDialog();
+  
+        resizeHandlerToggle();
+        dismissHandlerToggle();
+        keydownHandlerToggle();
+  
+        addClass(body,component+'-open');
+        addClass(modal,showClass);
+        modal[setAttribute](ariaHidden, false);
+  
+        hasClass(modal,'fade') ? emulateTransitionEnd(modal, triggerShow) : triggerShow();
+      }, supportTransitions ? 150 : 0);
+    };
+    this.hide = function() {
+      bootstrapCustomEvent.call(modal, hideEvent, component);
+      overlay = queryElement('.'+modalBackdropString);
+  
+      removeClass(modal,showClass);
+      modal[setAttribute](ariaHidden, true);
+  
+      !!overlay && removeClass(overlay,showClass);
+  
+      setTimeout(function(){
+        hasClass(modal,'fade') ? emulateTransitionEnd(modal, triggerHide) : triggerHide();
+      }, supportTransitions ? 150 : 0);
+    };
+    this.setContent = function( content ) {
+      queryElement('.'+component+'-content',modal).innerHTML = content;
+    };
+    this.update = function() {
+      if (open) {
+        checkScrollbar();
+        setScrollbar();
+        adjustDialog();
+      }
+    };
+  
+    // init
+    // prevent adding event handlers over and over
+    // modal is independent of a triggering element 
+    if ( !!element && !(stringModal in element) ) {
+      on(element, clickEvent, clickHandler);
+    }
+    if ( !!this[content] ) { this.setContent( this[content] ); }
+    !!element && (element[stringModal] = this);
+  };
+  
+  // DATA API
+  initializeDataAPI(stringModal, Modal, dataToggle);
+  
+  
+  /* Native Javascript for Bootstrap 4 | Popover
+  ----------------------------------------------*/
+  
+  // POPOVER DEFINITION
+  // ==================
+  var Popover = function( element, options ) {
+  
+    // initialization element
+    element = queryElement(element);
+  
+    // DATA API
+    var triggerData = element[getAttribute](dataTrigger), // click / hover / focus
+        animationData = element[getAttribute](dataAnimation), // true / false
+        placementData = element[getAttribute](dataPlacement),
+        dismissibleData = element[getAttribute](dataDismissible),
+        delayData = element[getAttribute](dataDelay),
+        containerData = element[getAttribute](dataContainer),
+  
+        // internal strings
+        component = 'popover',
+        template = 'template',
+        trigger = 'trigger',
+        classString = 'class',
+        div = 'div',
+        fade = 'fade',
+        title = 'title',
+        content = 'content',
+        dataTitle = 'data-title',
+        dataContent = 'data-content',
+        dismissible = 'dismissible',
+        closeBtn = '<button type="button" class="close">×</button>',
+        
+        // maybe the element is inside a modal
+        modal = getClosest(element,'.modal'),
+        
+        // maybe the element is inside a fixed navbar
+        navbarFixedTop = getClosest(element,'.'+fixedTop),
+        navbarFixedBottom = getClosest(element,'.'+fixedBottom);
+  
+    // set options
+    options = options || {};
+    this[template] = options[template] ? options[template] : null; // JavaScript only
+    this[trigger] = options[trigger] ? options[trigger] : triggerData || hoverEvent;
+    this[animation] = options[animation] && options[animation] !== fade ? options[animation] : animationData || fade;
+    this[placement] = options[placement] ? options[placement] : placementData || top;
+    this[delay] = parseInt(options[delay] || delayData) || 200;
+    this[dismissible] = options[dismissible] || dismissibleData === 'true' ? true : false;
+    this[container] = queryElement(options[container]) ? queryElement(options[container]) 
+                    : queryElement(containerData) ? queryElement(containerData) 
+                    : navbarFixedTop ? navbarFixedTop
+                    : navbarFixedBottom ? navbarFixedBottom
+                    : modal ? modal : body;
+    
+    // bind, content
+    var self = this, 
+      titleString = element[getAttribute](dataTitle) || null,
+      contentString = element[getAttribute](dataContent) || null;
+  
+    if ( !contentString && !this[template] ) return; // invalidate
+  
+    // constants, vars
+    var popover = null, timer = 0, placementSetting = this[placement],
+      
+      // handlers
+      dismissibleHandler = function(e) {
+        if (popover !== null && e[target] === queryElement('.close',popover)) {
+          self.hide();
+        }
+      },
+  
+      // private methods
+      removePopover = function() {
+        self[container].removeChild(popover);
+        timer = null; popover = null; 
+      },
+      createPopover = function() {
+        titleString = element[getAttribute](dataTitle); // check content again
+        contentString = element[getAttribute](dataContent);
+  
+        popover = document.createElement(div);
+  
+        // popover arrow
+        var popoverArrow = document.createElement(div);
+        popoverArrow[setAttribute](classString,'arrow');
+        popover.appendChild(popoverArrow);
+  
+        if ( contentString !== null && self[template] === null ) { //create the popover from data attributes
+  
+          popover[setAttribute]('role','tooltip');
+  
+          if (titleString !== null) {
+            var popoverTitle = document.createElement('h3');
+            popoverTitle[setAttribute](classString,component+'-header');
+  
+            popoverTitle.innerHTML = self[dismissible] ? titleString + closeBtn : titleString;
+            popover.appendChild(popoverTitle);
+          }
+  
+          //set popover content
+          var popoverContent = document.createElement(div);
+          popoverContent[setAttribute](classString,component+'-body');
+          popoverContent.innerHTML = self[dismissible] && titleString === null ? contentString + closeBtn : contentString;
+          popover.appendChild(popoverContent);
+  
+        } else {  // or create the popover from template
+          var popoverTemplate = document.createElement(div);
+          popoverTemplate.innerHTML = self[template];
+          popover.innerHTML = popoverTemplate.firstChild.innerHTML;
+        }
+  
+        //append to the container
+        self[container].appendChild(popover);
+        popover[style].display = 'block';
+        popover[setAttribute](classString, component+ ' bs-' + component+'-'+placementSetting + ' ' + self[animation]);
+      },
+      showPopover = function () {
+        !hasClass(popover,showClass) && ( addClass(popover,showClass) );
+      },
+      updatePopover = function() {
+        styleTip(element,popover,placementSetting,self[container]);
+        if (!isElementInViewport(popover) ) { 
+          placementSetting = updatePlacement(placementSetting); 
+          styleTip(element,popover,placementSetting,self[container]); 
+        }
+      },
+      
+      // triggers
+      showTrigger = function() {
+        bootstrapCustomEvent.call(element, shownEvent, component);
+      },
+      hideTrigger = function() {
+        removePopover();
+        bootstrapCustomEvent.call(element, hiddenEvent, component);
+      };
+  
+    // public methods / handlers
+    this.toggle = function() {
+      if (popover === null) { self.show(); } 
+      else { self.hide(); }
+    };
+    this.show = function() {
+      clearTimeout(timer);
+      timer = setTimeout( function() {
+        if (popover === null) {
+          placementSetting = self[placement]; // we reset placement in all cases
+          createPopover();
+          updatePopover();
+          showPopover();
+          bootstrapCustomEvent.call(element, showEvent, component);
+          !!self[animation] ? emulateTransitionEnd(popover, showTrigger) : showTrigger();
+        }
+      }, 20 );
+    };
+    this.hide = function() {
+      clearTimeout(timer);
+      timer = setTimeout( function() {
+        if (popover && popover !== null && hasClass(popover,showClass)) {
+          bootstrapCustomEvent.call(element, hideEvent, component);
+          removeClass(popover,showClass);
+          !!self[animation] ? emulateTransitionEnd(popover, hideTrigger) : hideTrigger();
+        }
+      }, self[delay] );
+    };
+  
+    // init
+    if ( !(stringPopover in element) ) { // prevent adding event handlers twice
+      if (self[trigger] === hoverEvent) {
+        on( element, mouseHover[0], self.show );
+        if (!self[dismissible]) { on( element, mouseHover[1], self.hide ); }
+      } else if (/^(click|focus)$/.test(self[trigger])) {
+        on( element, self[trigger], self.toggle );
+        if (!self[dismissible]) { on( element, 'blur', self.hide ); }
+      }
+      
+      if (self[dismissible]) { on( document, clickEvent, dismissibleHandler ); }
+    
+      // dismiss on window resize
+      on( globalObject, resizeEvent, self.hide );
+  
+    }
+    element[stringPopover] = self;
+  };
+  
+  // POPOVER DATA API
+  // ================
+  initializeDataAPI(stringPopover, Popover, dataToggle);
+  
+  
+  /* Native Javascript for Bootstrap 4 | ScrollSpy
+  -----------------------------------------------*/
+  
+  // SCROLLSPY DEFINITION
+  // ====================
+  var ScrollSpy = function(element, options) {
+  
+    // initialization element, the element we spy on
+    element = queryElement(element); 
+  
+    // DATA API
+    var targetData = queryElement(element[getAttribute](dataTarget));
+  
+    // set options
+    options = options || {};
+    if ( !options[target] && !targetData ) { return; } // invalidate
+  
+    // event targets, constants
+    var spyTarget = options[target] && queryElement(options[target]) || targetData,
+        links = spyTarget && spyTarget[getElementsByTagName]('A'), 
+        items = [], targetItems = [], scrollOffset,
+        scrollTarget = element[offsetHeight] < element[scrollHeight] ? element : globalObject, // determine which is the real scrollTarget
+        isWindow = scrollTarget === globalObject;  
+  
+    // populate items and targets
+    for (var i=0, il=links[length]; i<il; i++) {
+      var href = links[i][getAttribute]('href'), 
+          targetItem = href && targetsReg.test(href) && queryElement(href);
+      if ( !!targetItem ) {
+        items.push(links[i]);
+        targetItems.push(targetItem);
+      }
+    }
+  
+    // private methods
+    var updateItem = function(index) {
+        // var parent = items[index][parentNode], // item's item LI element
+        var item = items[index],
+          targetItem = targetItems[index], // the menu item targets this element
+          dropdown = item[parentNode][parentNode],
+          dropdownLink = hasClass(dropdown,'dropdown') && dropdown[getElementsByTagName]('A')[0],
+          targetRect = isWindow && targetItem[getBoundingClientRect](),
+  
+          isActive = hasClass(item,active) || false,
+  
+          topEdge = isWindow ? targetRect[top] + scrollOffset : targetItem[offsetTop] - (targetItems[index-1] ? 0 : 10),
+          bottomEdge = isWindow ? targetRect[bottom] + scrollOffset : targetItems[index+1] ? targetItems[index+1][offsetTop] : element[scrollHeight],
+  
+          inside = scrollOffset >= topEdge && bottomEdge > scrollOffset;
+  
+        if ( !isActive && inside ) {
+          if ( !hasClass(item,active) ) {
+            addClass(item,active);
+            isActive = true;
+            if (dropdownLink && !hasClass(dropdownLink,active) ) {
+              addClass(dropdownLink,active);
+            }
+            bootstrapCustomEvent.call(element, 'activate', 'scrollspy', items[index]);
+          }
+        } else if ( !inside ) {
+          if ( hasClass(item,active) ) {
+            removeClass(item,active);
+            isActive = false;
+            if (dropdownLink && hasClass(dropdownLink,active) && !getElementsByClassName(item[parentNode],active).length  ) {
+              removeClass(dropdownLink,active);
+            }
+          }
+        } else if ( !inside && !isActive || isActive && inside ) {
+          return;
+        }
+      },
+      updateItems = function(){
+        scrollOffset = isWindow ? getScroll().y : element[scrollTop];
+        for (var index=0, itl=items[length]; index<itl; index++) {
+          updateItem(index)
+        }
+      };
+  
+    // public method
+    this.refresh = function () {
+      updateItems();
+    }
+  
+    // init
+    if ( !(stringScrollSpy in element) ) { // prevent adding event handlers twice
+      on( scrollTarget, scrollEvent, this.refresh );
+      on( globalObject, resizeEvent, this.refresh ); 
+    }
+    this.refresh();
+    element[stringScrollSpy] = this;
+  };
+  
+  // SCROLLSPY DATA API
+  // ==================
+  initializeDataAPI(stringScrollSpy, ScrollSpy, dataSpy);
+  
+  
+  /* Native Javascript for Bootstrap 4 | Tab
+  -----------------------------------------*/
+  
+  // TAB DEFINITION
+  // ==============
+  var Tab = function( element, options ) {
+  
+    // initialization element
+    element = queryElement(element);
+  
+    // DATA API
+    var heightData = element[getAttribute](dataHeight),
+      
+        // strings
+        component = 'tab', height = 'height', isAnimating = 'isAnimating';
+  
+    // set default animation state
+    element[isAnimating] = false;
+  
+    // set options
+    options = options || {};
+    this[height] = supportTransitions ? (options[height] || heightData === 'true') : false;
+  
+    // bind, event targets
+    var self = this, next,
+      tabs = getClosest(element,'.nav'),
+      tabsContentContainer,
+      dropdown = tabs && queryElement('.dropdown-toggle',tabs),
+      activeTab, activeContent, nextContent,
+      // trigger
+      triggerShow = function() {
+        bootstrapCustomEvent.call(next, shownEvent, component, activeTab);
+        if (tabsContentContainer) { // height animation
+          (function(){
+            setTimeout(function(){
+              tabsContentContainer[style][height] = '';
+              removeClass(tabsContentContainer,collapsing);
+              activeTab[isAnimating] = next[isAnimating] = false;
+            },200);
+          }());
+        } else {
+          activeTab[isAnimating] = next[isAnimating] = false;
+        }
+      },
+      triggerHide = function() {
+        removeClass(activeContent,active);
+        addClass(nextContent,active);
+        setTimeout(function() {
+          addClass(nextContent,showClass);
+          nextContent[offsetHeight];
+          if (tabsContentContainer) addClass(tabsContentContainer,collapsing);
+          (function() {
+            bootstrapCustomEvent.call(next, showEvent, component, activeTab);
+            (function() {
+              if (tabsContentContainer) tabsContentContainer[style][height] = getMaxHeight(nextContent) + 'px'; // height animation
+              bootstrapCustomEvent.call(activeTab, hiddenEvent, component, next);
+            }());
+          }());
+        },20);
+      };
+  
+    if (!tabs) return; // invalidate 
+  
+    // private methods
+    var getActiveTab = function() {
+        var activeTabs = getElementsByClassName(tabs,active), activeTab;
+        if ( activeTabs[length] === 1 && !hasClass(activeTabs[0][parentNode],'dropdown') ) {
+          activeTab = activeTabs[0];
+        } else if ( activeTabs[length] > 1 ) {
+          activeTab = activeTabs[activeTabs[length]-1];
+        }
+        return activeTab;
+      },
+      getActiveContent = function() {
+        return queryElement(getActiveTab()[getAttribute]('href'));
+      },
+      // handler 
+      clickHandler = function(e) {
+        e.preventDefault();
+        next = e[target][getAttribute](dataToggle) === component || targetsReg.test(e[target][getAttribute]('href')) 
+             ? e[target] : e[target][parentNode]; // allow for child elements like icons to use the handler
+        self.show();
+      };
+  
+    // public method
+    this.show = function() { // the tab we clicked is now the next tab
+      next = next || element;
+      nextContent = queryElement(next[getAttribute]('href')); //this is the actual object, the next tab content to activate
+      activeTab = getActiveTab(); 
+      activeContent = getActiveContent();
+      
+      if ( (!activeTab[isAnimating] || !next[isAnimating]) && !hasClass(next,active) ) {
+        activeTab[isAnimating] = next[isAnimating] = true;
+        removeClass(activeTab,active);
+        addClass(next,active);
+  
+        if ( dropdown ) {
+          if ( !hasClass(element[parentNode],'dropdown-menu') ) {
+            if (hasClass(dropdown,active)) removeClass(dropdown,active);
+          } else {
+            if (!hasClass(dropdown,active)) addClass(dropdown,active);
+          }
+        }
+        
+        if (tabsContentContainer) tabsContentContainer[style][height] = getMaxHeight(activeContent) + 'px'; // height animation
+  
+        (function() {
+          removeClass(activeContent,showClass);
+          bootstrapCustomEvent.call(activeTab, hideEvent, component, next);
+          (function(){
+            hasClass(activeContent, 'fade') ? emulateTransitionEnd(activeContent, triggerHide) : triggerHide();
+          }());
+        }());
+  
+        (function(){
+          hasClass(nextContent, 'fade') ? emulateTransitionEnd(nextContent, triggerShow) : triggerShow();
+        }());
+      }
+    };
+  
+    // init
+    if ( !(stringTab in element) ) { // prevent adding event handlers twice
+      on(element, clickEvent, clickHandler);
+    }
+    if (this[height]) { tabsContentContainer = getActiveContent()[parentNode]; }
+    element[stringTab] = this;
+  };
+  
+  // TAB DATA API
+  // ============
+  initializeDataAPI(stringTab, Tab, dataToggle);
+  
+  
+  /* Native Javascript for Bootstrap 4 | Tooltip
+  ---------------------------------------------*/
+  
+  // TOOLTIP DEFINITION
+  // ==================
+  var Tooltip = function( element,options ) {
+  
+    // initialization element
+    element = queryElement(element);
+  
+    // DATA API
+    var animationData = element[getAttribute](dataAnimation),
+        placementData = element[getAttribute](dataPlacement),
+        delayData = element[getAttribute](dataDelay),
+        containerData = element[getAttribute](dataContainer),
+        
+        // strings
+        component = 'tooltip',
+        classString = 'class',
+        title = 'title',
+        fade = 'fade',
+        div = 'div',
+  
+        // maybe the element is inside a modal
+        modal = getClosest(element,'.modal'),
+        
+        // maybe the element is inside a fixed navbar
+        navbarFixedTop = getClosest(element,'.'+fixedTop),
+        navbarFixedBottom = getClosest(element,'.'+fixedBottom);
+  
+    // set options
+    options = options || {};
+    this[animation] = options[animation] && options[animation] !== fade ? options[animation] : animationData || fade;
+    this[placement] = options[placement] ? options[placement] : placementData || top;
+    this[delay] = parseInt(options[delay] || delayData) || 200;
+    this[container] = queryElement(options[container]) ? queryElement(options[container]) 
+                    : queryElement(containerData) ? queryElement(containerData) 
+                    : navbarFixedTop ? navbarFixedTop
+                    : navbarFixedBottom ? navbarFixedBottom
+                    : modal ? modal : body;
+  
+    // bind, event targets, title and constants
+    var self = this, timer = 0, placementSetting = this[placement], tooltip = null,
+      titleString = element[getAttribute](title) || element[getAttribute](dataOriginalTitle);
+  
+    if ( !titleString ) return; // invalidate
+  
+    // private methods
+    var removeToolTip = function() {
+        self[container].removeChild(tooltip);
+        tooltip = null; timer = null;
+      },
+      createToolTip = function() {
+        titleString = element[getAttribute](title) || element[getAttribute](dataOriginalTitle); // read the title again
+        tooltip = document.createElement(div);
+        tooltip[setAttribute]('role',component);
+  
+        // tooltip arrow
+        var tooltipArrow = document.createElement(div);
+        tooltipArrow[setAttribute](classString,'arrow');
+        tooltip.appendChild(tooltipArrow);
+    
+        var tooltipInner = document.createElement(div);
+        tooltipInner[setAttribute](classString,component+'-inner');
+        tooltip.appendChild(tooltipInner);
+        tooltipInner.innerHTML = titleString;
+  
+        self[container].appendChild(tooltip);
+        tooltip[setAttribute](classString, component + ' bs-' + component+'-'+placementSetting + ' ' + self[animation]);
+      },
+      updateTooltip = function () {
+        styleTip(element,tooltip,placementSetting,self[container]);
+        if (!isElementInViewport(tooltip) ) { 
+          placementSetting = updatePlacement(placementSetting); 
+          styleTip(element,tooltip,placementSetting,self[container]); 
+        }
+      },
+      showTooltip = function () {
+        !hasClass(tooltip,showClass) && ( addClass(tooltip,showClass) );
+      },
+      // triggers
+      showTrigger = function() {
+        bootstrapCustomEvent.call(element, shownEvent, component);
+      },
+      hideTrigger = function() {
+        removeToolTip();
+        bootstrapCustomEvent.call(element, hiddenEvent, component);
+      };
+  
+    // public methods
+    this.show = function() {
+      clearTimeout(timer);
+      timer = setTimeout( function() {
+        if (tooltip === null) {
+          placementSetting = self[placement]; // we reset placement in all cases
+          createToolTip();
+          updateTooltip();
+          showTooltip();
+          bootstrapCustomEvent.call(element, showEvent, component);
+          !!self[animation] ? emulateTransitionEnd(tooltip, showTrigger) : showTrigger();
+        }
+      }, 20 );
+    };
+    this.hide = function() {
+      clearTimeout(timer);
+      timer = setTimeout( function() {
+        if (tooltip && tooltip !== null && hasClass(tooltip,showClass)) {
+          bootstrapCustomEvent.call(element, hideEvent, component);
+          removeClass(tooltip,showClass);
+          !!self[animation] ? emulateTransitionEnd(tooltip, hideTrigger) : hideTrigger();
+        }
+      }, self[delay]);
+    };
+    this.toggle = function() {
+      if (!tooltip) { self.show(); } 
+      else { self.hide(); }
+    };
+  
+    // init
+    if ( !(stringTooltip in element) ) { // prevent adding event handlers twice
+      element[setAttribute](dataOriginalTitle,titleString);
+      element.removeAttribute(title);
+      on(element, mouseHover[0], this.show);
+      on(element, mouseHover[1], this.hide);
+    }
+    element[stringTooltip] = this;
+  };
+  
+  // TOOLTIP DATA API
+  // =================
+  initializeDataAPI(stringTooltip, Tooltip, dataToggle);
+  
+  
+  return {
+    Alert: Alert,
+    Button: Button,
+    Carousel: Carousel,
+    Collapse: Collapse,
+    Dropdown: Dropdown,
+    Modal: Modal,
+    Popover: Popover,
+    ScrollSpy: ScrollSpy,
+    Tab: Tab,
+    Tooltip: Tooltip
+  };
+}));
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(257)))
+
+/***/ }),
+/* 257 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 258 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -27684,7 +29503,7 @@ var About = function (_React$Component) {
 module.exports = About;
 
 /***/ }),
-/* 256 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27692,7 +29511,7 @@ module.exports = About;
 
 var _reactRouterDom = __webpack_require__(38);
 
-var React = __webpack_require__(6);
+var React = __webpack_require__(5);
 
 
 var Examples = function Examples(props) {
@@ -27737,7 +29556,7 @@ var Examples = function Examples(props) {
 module.exports = Examples;
 
 /***/ }),
-/* 257 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27753,7 +29572,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var React = __webpack_require__(6);
+var React = __webpack_require__(5);
 
 var Nav = function (_React$Component) {
   _inherits(Nav, _React$Component);
@@ -27841,7 +29660,7 @@ var Nav = function (_React$Component) {
 module.exports = Nav;
 
 /***/ }),
-/* 258 */
+/* 261 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

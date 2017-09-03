@@ -1,10 +1,23 @@
 const React = require('react');
-import {NavLink} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 
 class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onSearch = this.onSearch.bind(this);
+  }
+
   onSearch(e) {
     e.preventDefault();
-    alert('Not yet wired up!');
+
+    const location = this.refs.location.value;
+    const encodedLocation = encodeURIComponent(location);
+
+    if (location.length > 0) {
+      this.refs.location.value = '';
+      this.props.history.push(`/?location=${encodedLocation}`);
+    }
   }
   render() {
     return (
@@ -26,7 +39,7 @@ class Nav extends React.Component {
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0" onSubmit={this.onSearch}>
-            <input className="form-control mr-sm-2" type="search" placeholder="Search weather" aria-label="Search"/>
+            <input className="form-control mr-sm-2" type="search" ref="location" placeholder="Search weather" aria-label="Search"/>
               <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Get Weather</button>
           </form>
         </div>
@@ -35,4 +48,4 @@ class Nav extends React.Component {
   }
 }
 
-module.exports = Nav;
+module.exports = withRouter(Nav);

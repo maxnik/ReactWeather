@@ -2,6 +2,7 @@ import React from 'react';
 import WeatherForm from 'WeatherForm';
 import WeatherInfo from 'WeatherInfo';
 import openWeatherMap from 'openWeatherMap';
+import queryString from 'query-string';
 import Modal from 'Modal';
 
 class Weather extends React.Component {
@@ -31,6 +32,20 @@ class Weather extends React.Component {
         errorMessage: errorMessage.message
       });
     });
+  }
+  componentDidMount() {
+    const location = queryString.parse(this.props.location.search).location;
+
+    if (location && location.length > 0) {
+      this.handleSearch(location);
+    }
+  }
+  componentWillReceiveProps(newProps) {
+    const location = queryString.parse(newProps.location.search).location;
+
+    if (location && location.length > 0) {
+      this.handleSearch(location);
+    }
   }
   render() {
     const {isLoading, location, temp, errorMessage} = this.state;
